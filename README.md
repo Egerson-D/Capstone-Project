@@ -1,5 +1,9 @@
-Although researchers (Pizzol et al., 2018; Karoubi et al., 2016; Fabris, 2019; Yang et al., 2015) have used different terms such as digital payment, electronic money, cashless payment, which all means online payment and can be defined as payments made using electronic device and channels with the aid of the internet. Over the years, studies (Zhang et al., 2018; Laukkanen and Kiviniemi, 2010; Rehncrona 2018) have focused largely on the benefits related to banking or payment such as reduced transport cost, service delivery regardless time frame, reduced human resources etc. However, fraudulent transactions are increasing now a day in large amounts which have caused great losses for some banks and their fin-tech consultants. 
+INTRODUCTION
+
+Although researchers (Pizzol et al., 2018; Karoubi et al., 2016; Fabris, 2019; Yang et al., 2015) have used different terms such as digital payment, electronic money, cashless payment, which can all be reffered to as online payment. Online payment can be defined as payments made using electronic device and channels with the aid of the internet. Over the years, studies (Zhang et al., 2018; Laukkanen and Kiviniemi, 2010; Rehncrona 2018) have focused largely on the benefits related of online payment such as reduced transport cost, service delivery regardless time frame, reduced human resources etc. However, fraudulent transactions are increasing now a day in large amounts which have caused great losses for some banks and their fin-tech consultants. 
 In line with the Theory of Perceive Risk (TPR), which states that risks entails benefits this means; there is a likelihood for loss in the pursuit of a desired outcome when using an online payment service. To this backdrop, this study, employed the use of python to explore an Online Payment Fraud Detection Dataset using models to predict fraud and fraud less transactions with regards the type of transaction, amount, and changes in the account balance of the customer (sender and recipient). The outcome from this would help BB Plc make informed decision on appropriate risk control measures whilst providing optimum service delivery to online customers. 
+
+METHODOLOGY
 
 Step 1. Lunch the jupyter notebook for python
 Step 2. Import necessary python libraries pandas, numpy, seaborn, matplotlib.pyplot, ploty.express etc. to enable univariate and bivariate analysis of data.
@@ -9,8 +13,19 @@ Step 5. Exploratory Data Analysis
 •	Checking correlations
 •	Transforming categorical variables 
 Step 6. Splitting, training and testing learning models 
-While carrying out analysis, I had challenges in fitting the models accurately.  
-References
+While carrying out analysis, I had challenges in fitting the models accurately. 
+
+
+FINDINGS
+The mean amount transacted and steps taken to execute an initaited transcation via the online payment was 158,666 and 26 steps.
+Of all five different types of transction, more than one-third of the various types (35.6%) are Cash-out while 0.6% are Debit transactions.
+There is a positive but weak correlation between the amount transacted and the new balance of the recipient customer.
+The higher amounts transacted online were of the TRANSFER forms.
+The models (Decisiom Treee and Random Classifiers) were 99% accurate.
+Uisng the KNeighborsClassifier; the model predicted that are fraudulent only 13% are were actually captured as fraudulent.
+Out of all the predicted fraudulent transactions, the modle only predictied this outcom 65%  wecorrectly.
+
+REFERENCES
 Karoubi, B., Chenavaz, R. and Paraschiv, C. (2016), “Consumers’ perceived risk and hold and use of payment instruments”, Applied Economics, Vol. 48 No. 14, pp. 1317-1329, doi: 10.1080/00036846.2015.1100249.
 Fabris, N. (2019), “Cashless society: the future of money or a utopia?”, Journal of Central Banking Theory and Practice, Vol. 8 No. 1, pp. 53-66, doi: 10.2478/jcbtp-2019-0003.
 Yang, Q., Pang, C., Liu, L., Yen, D.C. and Tarn, J.M. (2015), “Exploring consumer perceived risk and trust for online payments: an empirical study in China’s younger generation”, Computers in Human Behavior, Vol. 50, pp. 9-24, doi: 10.1016/j.chb.2015.03.058
